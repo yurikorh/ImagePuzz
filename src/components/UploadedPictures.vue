@@ -38,7 +38,7 @@ export default {
   mounted() {
     window.addEventListener('resize', this.updateDeviceClass);
   },
-  destroyed() {
+  unmounted() {
     window.removeEventListener('resize', this.updateDeviceClass);
   },
   updateDeviceClass() {
